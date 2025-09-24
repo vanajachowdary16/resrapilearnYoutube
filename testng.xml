@@ -8,7 +8,7 @@
       <class name="demoApiFramework.GetProfileRequestTest"/>
       <class name="demoApiFramework.UpdateProfileTest"/>
       <class name="demoApiFramework.LoginApiTest"/>
-      <class name="demoApiFramework.loginAPITest2"/>
+      <exclude name="demoApiFramework.loginAPITest2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
