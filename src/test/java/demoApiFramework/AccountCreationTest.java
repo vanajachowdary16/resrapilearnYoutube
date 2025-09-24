@@ -12,13 +12,18 @@ public class AccountCreationTest {
 	
 	@Test(description="verify account creation")
 	public void createAccountTest() {
-		SignupRequest signupReqst = new SignupRequest.Builder().userName("vanu").password("disha@123").email("testtest123@gmail.com")
-		.firstName("disha").lastName("butt").mobileNumber("7495068278").build();
-		AuthService authService = new AuthService();
-		
-		Response resp =authService.signUp(signupReqst);
-		System.out.println(resp.asPrettyString());
-		Assert.assertEquals(resp.asPrettyString(), "User registered successfully!");
+		SignupRequest signUpRequest=new SignupRequest.Builder()
+				.userName("diishaa19")
+				.email("diishaa1234@test.com")
+				.firstName("Disha1")
+				.password("disha123")
+				.lastName("Bhatt")
+				.mobileNumber("7777777774")
+				.build();				
+				AuthService authService = new AuthService();
+				Response response=authService.signUp(signUpRequest);
+				Assert.assertEquals(response.asPrettyString(), "User registered successfully!");
+				Assert.assertEquals(response.statusCode(), 200);
 		
 	}
 
