@@ -1,6 +1,7 @@
 package apiBase;
 
 import io.restassured.response.Response;
+import requests.ProfileRequestPojo;
 
 public class UserProfileManagementService extends BaseService{
 	
@@ -10,5 +11,8 @@ public class UserProfileManagementService extends BaseService{
 		setAuthToken(token);
 		return getRequest(BASE_PATH+"profile");
 	}
-
+	public Response updateProfile(String token, ProfileRequestPojo payload) {
+		setAuthToken(token);
+		return putRequest(payload, BASE_PATH+"profile");
+	}
 }
