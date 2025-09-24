@@ -23,4 +23,7 @@ public class BaseService {
 	protected Response getRequest(String endpoint) {
 		return requestSpecification.get(endpoint);
 	}
+	protected Response putRequest(Object payload, String endpoint) {
+		return requestSpecification.contentType(ContentType.JSON).body(payload).put(endpoint);
+	}
 }
