@@ -19,7 +19,7 @@ public class LoggingFilter implements Filter {
 		logRequest(requestSpec);
 		Response response=ctx.next(requestSpec, responseSpec);
 		logResponse(response);
-		return null;
+		return response;
 	}
 	public void logRequest(FilterableRequestSpecification requestSpec) {
 		logger.info("BASE_URI: "+requestSpec.getBaseUri());
