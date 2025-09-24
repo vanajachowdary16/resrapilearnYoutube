@@ -13,8 +13,8 @@ public class AccountCreationTest {
 	@Test(description="verify account creation")
 	public void createAccountTest() {
 		SignupRequest signUpRequest=new SignupRequest.Builder()
-				.userName("diishaa19")
-				.email("diishaa1234@test.com")
+				.userName("diishaaa19")
+				.email("diishaaa1234@test.com")
 				.firstName("Disha1")
 				.password("disha123")
 				.lastName("Bhatt")
