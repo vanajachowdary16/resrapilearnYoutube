@@ -3,12 +3,12 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="demoApiFramework.AccountCreationTest"/>
+      <exclude name="demoApiFramework.AccountCreationTest"/>
       <class name="demoApiFramework.ForgotPasswordTest"/>
       <class name="demoApiFramework.GetProfileRequestTest"/>
       <class name="demoApiFramework.UpdateProfileTest"/>
       <class name="demoApiFramework.LoginApiTest"/>
-      <exclude name="demoApiFramework.loginAPITest2"/>
+      <class name="demoApiFramework.loginAPITest2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
